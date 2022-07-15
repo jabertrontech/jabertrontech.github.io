@@ -212,8 +212,8 @@
             <h6 class="text-muted text-uppercase">Easy &amp; fast development</h6>
             <h3>Multiple, Supported Frameworks &amp; Plugins.</h3>
             <p class="lead mb-4 text-muted">The use of multiple frameworks and plugins is to allow our Designers and Developers to focus on building an unique feature for your web based projects rather than re-inventing by coding. The frameworks we use are specially created to help you boost the performance and efficiency of your website or app.</p>
-            <button id="docButton" class="btn btn-secondary btn-lg btn-borderless"><a href="https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/" target="_blank">
-              Read our docs</a>
+            <button id="docButton" class="btn btn-secondary btn-lg btn-borderless">
+              Read our docs
             </button>
           </div>
         </div>
@@ -429,6 +429,12 @@
           };
 
         sendMail()
+      });
+
+      $("#docButton").click(function () {
+
+        var url = "https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/";
+        $(location).attr('href','_blank',url);
       });
       
     </script>
